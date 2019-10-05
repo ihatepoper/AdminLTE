@@ -1,0 +1,108 @@
+> @ dev C:\xampp\htdocs\finals
+> npm run development
+
+
+> @ development C:\xampp\htdocs\finals
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+98% after emitting SizeLimitsPlugin
+
+ ERROR  Failed to compile with 1 errors                                                                                                   7:48:00 PM
+This dependency was not found:
+
+* admin-lte/build/js/AdminLTE in ./resources/js/bootstrap.js
+
+To install it, you can run: npm install --save admin-lte/build/js/AdminLTE
+     Asset      Size   Chunks             Chunk Names
+/js/app.js  1.39 MiB  /js/app  [emitted]  /js/app
+
+ERROR in ./resources/sass/app.scss
+Module build failed (from ./node_modules/css-loader/index.js):
+ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+
+@import '~admin-lte/build/scss/aAdminLTE';
+       ^
+      Can't find stylesheet to import.
+   ╷
+11 │ @import '~admin-lte/build/scss/aAdminLTE';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  stdin 11:9  root stylesheet
+      in C:\xampp\htdocs\finals\resources\sass\app.scss (line 11, column 9)
+    at runLoaders (C:\xampp\htdocs\finals\node_modules\webpack\lib\NormalModule.js:316:20)
+    at C:\xampp\htdocs\finals\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at C:\xampp\htdocs\finals\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+    at context.callback (C:\xampp\htdocs\finals\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+    at render (C:\xampp\htdocs\finals\node_modules\sass-loader\dist\index.js:89:7)
+    at Function.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:54337:16)
+    at _render_closure1.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:33509:12)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19817:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19821:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18286:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18574:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3484:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18410:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17809:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3240:17)
+    at C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:10537:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3263:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17830:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17822:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19817:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19821:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18286:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18574:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3484:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18410:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17809:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3240:17)
+    at C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:12240:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3263:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17830:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:17822:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19817:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:19821:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18286:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:18574:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\finals\node_modules\sass\sass.dart.js:3484:88)
+ @ ./resources/sass/app.scss
+
+ERROR in ./resources/sass/app.scss (./node_modules/css-loader??ref--5-2!./node_modules/postcss-loader/src??postcss0!./node_modules/resolve-url-loader??ref--5-4!./node_modules/sass-loader/dist/cjs.js??ref--5-5!./resources/sass/app.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+
+@import '~admin-lte/build/scss/aAdminLTE';
+       ^
+      Can't find stylesheet to import.
+   ╷
+11 │ @import '~admin-lte/build/scss/aAdminLTE';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+  stdin 11:9  root stylesheet
+      in C:\xampp\htdocs\finals\resources\sass\app.scss (line 11, column 9)
+ @ ./resources/sass/app.scss 2:14-253
+
+ERROR in ./resources/js/bootstrap.js
+Module not found: Error: Can't resolve 'admin-lte/build/js/AdminLTE' in 'C:\xampp\htdocs\finals\resources\js'
+ @ ./resources/js/bootstrap.js 9:0-38
+ @ ./resources/js/app.js
+ @ multi ./resources/js/app.js ./resources/sass/app.scss
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! @ development: `cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js`
+npm ERR! Exit status 2
+npm ERR!
+npm ERR! Failed at the @ development script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ihatepoper\AppData\Roaming\npm-cache\_logs\2019-10-05T12_48_01_264Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! @ dev: `npm run development`
+npm ERR! Exit status 2
+npm ERR!
+npm ERR! Failed at the @ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Ihatepoper\AppData\Roaming\npm-cache\_logs\2019-10-05T12_48_01_424Z-debug.log
